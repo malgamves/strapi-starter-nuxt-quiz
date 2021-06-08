@@ -1,0 +1,26 @@
+{
+  "name": "strapiconf-quizz",
+  "description": "Welcome to the official StrapiConf Quizz App",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/apollo": "^4.0.1-rc.5",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/pwa": "^3.3.5",
+    "apollo-cache-inmemory": "^1.6.6",
+    "core-js": "^3.8.3",
+    "graphql": "^15.5.0",
+    "graphql-tag": "^2.11.0",
+    "nuxt": "^2.14.12"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^4.0.3",
+    "postcss": "^8.2.10"
+  }
+}
