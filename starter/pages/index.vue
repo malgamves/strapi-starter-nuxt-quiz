@@ -326,7 +326,7 @@ small {
 
 
 <script>
-// import gql from "graphql-tag";
+import gql from "graphql-tag";
 
 export default {
   data() {
@@ -428,87 +428,87 @@ export default {
 		// 	],
 		// },
     // break three
-		{
-			questionText: 'Where do you place production server configuration files?',
-			answerOptions: [
-				{ answerText: './', isCorrect: false },
-				{ answerText: 'config/', isCorrect: false },
-				{ answerText: 'config/env/production/', isCorrect: true },
-				{ answerText: 'config/production/', isCorrect: false },
-			],
-		},
-    {
-			questionText: 'Which official plugin does Strapi not have?',
-			answerOptions: [
-				{ answerText: 'Internationalization', isCorrect: false },
-				{ answerText: 'Search Plugin', isCorrect: true },
-				{ answerText: 'GraphQL', isCorrect: false },
-				{ answerText: 'Documentation', isCorrect: false },
-			],
-		},
-    {
-			questionText: 'How many employees does Strapi have?',
-			answerOptions: [
-				{ answerText: '26', isCorrect: false },
-				{ answerText: '35', isCorrect: true },
-				{ answerText: '45', isCorrect: false },
-				{ answerText: '12', isCorrect: false },
-			],
-		},
-    {
-			questionText: 'What colour hair does @malgamves have?',
-			answerOptions: [
-				{ answerText: 'Purple', isCorrect: false },
-				{ answerText: 'Green', isCorrect: false },
-				{ answerText: 'Black', isCorrect: false },
-				{ answerText: 'Blonde', isCorrect: true },
-			],
-		},
-    {
-			questionText: 'How many stars does Strapi have?',
-			answerOptions: [
-				{ answerText: '36k', isCorrect: true },
-				{ answerText: '40k', isCorrect: false },
-				{ answerText: '20k', isCorrect: false },
-				{ answerText: '33k', isCorrect: false },
-			],
-		},
-		{
-			questionText: 'What is the Strapi Product Teams favourite animal?',
-			answerOptions: [
-				{ answerText: 'Chicken', isCorrect: false },
-				{ answerText: 'Lion', isCorrect: false },
-				{ answerText: 'Penguin', isCorrect: true },
-				{ answerText: 'Giraffe', isCorrect: false },
-			],
-		},
-		{
-			questionText: 'How do you upload media files in a REST POST request?',
-			answerOptions: [
-				{ answerText: 'x-www-form-urlencoded', isCorrect: false },
-				{ answerText: 'raw', isCorrect: false },
-				{ answerText: 'form-data', isCorrect: true },
-				{ answerText: 'binary', isCorrect: false },
-			],
-        },
-        {
-			questionText: 'What frontend framework does Strapi use for its Admin Panel?',
-			answerOptions: [
-				{ answerText: 'React', isCorrect: true },
-				{ answerText: 'Ember', isCorrect: false },
-        				{ answerText: 'Gatsby', isCorrect: false },
-				{ answerText: 'Angular', isCorrect: false },
-			],
-        },
-        {
-			questionText: 'Where are people currently _not_ using Strapi?',
-			answerOptions: [
-				{ answerText: 'The Moon', isCorrect: true },
-				{ answerText: 'Banks', isCorrect: false },
-				{ answerText: 'Factories', isCorrect: false },
-				{ answerText: 'Hospitals', isCorrect: true },
-			],
-        },
+		// {
+		// 	questionText: 'Where do you place production server configuration files?',
+		// 	answerOptions: [
+		// 		{ answerText: './', isCorrect: false },
+		// 		{ answerText: 'config/', isCorrect: false },
+		// 		{ answerText: 'config/env/production/', isCorrect: true },
+		// 		{ answerText: 'config/production/', isCorrect: false },
+		// 	],
+		// },
+    // {
+		// 	questionText: 'Which official plugin does Strapi not have?',
+		// 	answerOptions: [
+		// 		{ answerText: 'Internationalization', isCorrect: false },
+		// 		{ answerText: 'Search Plugin', isCorrect: true },
+		// 		{ answerText: 'GraphQL', isCorrect: false },
+		// 		{ answerText: 'Documentation', isCorrect: false },
+		// 	],
+		// },
+    // {
+		// 	questionText: 'How many employees does Strapi have?',
+		// 	answerOptions: [
+		// 		{ answerText: '26', isCorrect: false },
+		// 		{ answerText: '35', isCorrect: true },
+		// 		{ answerText: '45', isCorrect: false },
+		// 		{ answerText: '12', isCorrect: false },
+		// 	],
+		// },
+    // {
+		// 	questionText: 'What colour hair does @malgamves have?',
+		// 	answerOptions: [
+		// 		{ answerText: 'Purple', isCorrect: false },
+		// 		{ answerText: 'Green', isCorrect: false },
+		// 		{ answerText: 'Black', isCorrect: false },
+		// 		{ answerText: 'Blonde', isCorrect: true },
+		// 	],
+		// },
+    // {
+		// 	questionText: 'How many stars does Strapi have?',
+		// 	answerOptions: [
+		// 		{ answerText: '36k', isCorrect: true },
+		// 		{ answerText: '40k', isCorrect: false },
+		// 		{ answerText: '20k', isCorrect: false },
+		// 		{ answerText: '33k', isCorrect: false },
+		// 	],
+		// },
+		// {
+		// 	questionText: 'What is the Strapi Product Teams favourite animal?',
+		// 	answerOptions: [
+		// 		{ answerText: 'Chicken', isCorrect: false },
+		// 		{ answerText: 'Lion', isCorrect: false },
+		// 		{ answerText: 'Penguin', isCorrect: true },
+		// 		{ answerText: 'Giraffe', isCorrect: false },
+		// 	],
+		// },
+		// {
+		// 	questionText: 'How do you upload media files in a REST POST request?',
+		// 	answerOptions: [
+		// 		{ answerText: 'x-www-form-urlencoded', isCorrect: false },
+		// 		{ answerText: 'raw', isCorrect: false },
+		// 		{ answerText: 'form-data', isCorrect: true },
+		// 		{ answerText: 'binary', isCorrect: false },
+		// 	],
+    //     },
+    //     {
+		// 	questionText: 'What frontend framework does Strapi use for its Admin Panel?',
+		// 	answerOptions: [
+		// 		{ answerText: 'React', isCorrect: true },
+		// 		{ answerText: 'Ember', isCorrect: false },
+    //     				{ answerText: 'Gatsby', isCorrect: false },
+		// 		{ answerText: 'Angular', isCorrect: false },
+		// 	],
+    //     },
+    //     {
+		// 	questionText: 'Where are people currently _not_ using Strapi?',
+		// 	answerOptions: [
+		// 		{ answerText: 'The Moon', isCorrect: true },
+		// 		{ answerText: 'Banks', isCorrect: false },
+		// 		{ answerText: 'Factories', isCorrect: false },
+		// 		{ answerText: 'Hospitals', isCorrect: true },
+		// 	],
+    //     },
 			],
       phrases: [
         { text: "I love Strapi because ______ #StrapiConf" },
@@ -605,18 +605,18 @@ export default {
       }
     }
   },
-  // apollo: {
-  //   questions: gql`
-  //     query {
-  //       questions {
-  //         questionText
-  //         answerOptions {
-  //           answerText
-  //           isCorrect
-  //         }
-  //       }
-  //     }
-  //   `
-  // }
+  apollo: {
+    questions: gql`
+      query {
+        questions {
+          questionText
+          answerOptions {
+            answerText
+            isCorrect
+          }
+        }
+      }
+    `
+  }
 };
 </script>
